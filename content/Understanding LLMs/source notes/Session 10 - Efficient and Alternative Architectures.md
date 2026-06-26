@@ -104,7 +104,7 @@ Verdict from the slides: constant-time inference and a strong locality bias, but
 poor long-range capability and generally worse than Transformers — so they
 survive mainly inside **hybrid** models (Conformer, RetNet).
 
-![Convolution over text with multiple parallel filters](../../outputs/images/10-Efficient-Alternative-Architectures/conv-over-text-multiple-filters-p019.png)
+![Convolution over text with multiple parallel filters](outputs/images/10-Efficient-Alternative-Architectures/conv-over-text-multiple-filters-p019.png)
 *A width-3 convolution slides over "I like the cat": each window concatenates 3
 token embeddings (size $3d$) and $m$ filters produce $m$ features — the mechanism
 that detects local patterns regardless of position (deck p19).*

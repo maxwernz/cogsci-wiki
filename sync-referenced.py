@@ -175,8 +175,29 @@ def main():
                 if copy_in(src, target):
                     media_added += 1
 
+    # --- 3. Fix relative markdown image links ------------------------------
+    # The embedded images above were copied to the content root (content/outputs/).
+    # Wiki pages link them page-relatively (`![](../../outputs/...)`), but Quartz's
+    # transformLink mishandles `../` in markdown image links (it keeps the `../`
+    # and adds pathToRoot on top → one level too many → broken on GitHub Pages).
+    # Quartz treats link targets as ROOT-relative, so rewrite `../../outputs/` (any
+    # depth) to a root-relative `outputs/` path, which Quartz resolves correctly.
+    # (`![[...]]` embeds already resolve correctly and are left untouched.)
+    rel_outputs = re.compile(r"\]\((?:\.\./)+outputs/")
+    rewritten = 0
+    for dp, _, files in os.walk(dest):
+        for fn in files:
+            if not fn.endswith(".md"):
+                continue
+            p = os.path.join(dp, fn)
+            text = open(p, encoding="utf-8").read()
+            new = rel_outputs.sub("](outputs/", text)
+            if new != text:
+                open(p, "w", encoding="utf-8").write(new)
+                rewritten += 1
+
     print(f"synced  references ({pages_added} Global Wiki pages, "
-          f"{media_added} embedded media files)")
+          f"{media_added} embedded media files, {rewritten} pages relinked)")
 
 
 if __name__ == "__main__":

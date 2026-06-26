@@ -74,7 +74,7 @@ Variants, from crude to practical:
   models is memory-hungry if it needs gradients, so instead mask modules, *measure*
   the performance drop, and **regress** each module's importance — no backprop.
 
-![Coarse-to-fine structured pruning: prunable units in a Transformer layer](../../outputs/images/10-Efficient-Alternative-Architectures/structured-pruning-units-p033.png)
+![Coarse-to-fine structured pruning: prunable units in a Transformer layer](outputs/images/10-Efficient-Alternative-Architectures/structured-pruning-units-p033.png)
 *Structured pruning removes whole units via learned masks — coarse masks drop an
 entire FFN or multi-head-attention block; fine masks drop individual attention
 heads or hidden dimensions (deck p33, Xia et al. 2022).*
@@ -99,7 +99,7 @@ distribution carries **dark knowledge** — the relative probabilities of the wr
 answers encode similarity structure ("cat" makes "dog" a bit likely but "car"
 not) that a hard label throws away.
 
-![Hard vs. soft targets in distillation, with accuracy table](../../outputs/images/10-Efficient-Alternative-Architectures/distillation-hard-vs-soft-targets-p038.png)
+![Hard vs. soft targets in distillation, with accuracy table](outputs/images/10-Efficient-Alternative-Architectures/distillation-hard-vs-soft-targets-p038.png)
 *Hard targets give the student only the one-hot label; soft targets pass the
 teacher's full distribution (Positive 0.9 / Neutral 0.08 / Negative 0.01). The
 table shows soft targets recovering most accuracy even with only 3% of the

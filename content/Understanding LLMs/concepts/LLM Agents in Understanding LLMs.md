@@ -50,9 +50,9 @@ Important examples include:
 - Autonomous agents such as AutoGPT, BabyAGI, and HuggingGPT-style controller systems.
 - Generative agents that simulate characters using memory, planning, reflection, and environment interaction.
 
-![Agent model overview](../../outputs/images/06-ICL-Agents/agent-model-overview-p057.png)
+![Agent model overview](outputs/images/06-ICL-Agents/agent-model-overview-p057.png)
 
-![Generative-agent memory and planning model](../../outputs/images/06-ICL-Agents/generative-agent-memory-planning-p066.png)
+![Generative-agent memory and planning model](outputs/images/06-ICL-Agents/generative-agent-memory-planning-p066.png)
 
 The generative-agent model is especially useful because it makes agentic behavior depend on multiple components: a memory stream, retrieval, reflection, planning, and action.
 

@@ -71,23 +71,23 @@ The lecture proposes a working agent definition: an LM agent is a system in whic
 
 ## Selected visuals
 
-![Tree of Thought](../../outputs/images/06-ICL-Agents/tree-of-thought-p029.png)
+![Tree of Thought](outputs/images/06-ICL-Agents/tree-of-thought-p029.png)
 
 This slide was selected because it visualizes prompt-based reasoning as search over generated thought states rather than a single linear completion.
 
-![Naive RAG architecture](../../outputs/images/06-ICL-Agents/rag-naive-architecture-p046.png)
+![Naive RAG architecture](outputs/images/06-ICL-Agents/rag-naive-architecture-p046.png)
 
 This slide was selected because the indexing, retrieval, and generation stages of RAG are clearer as a pipeline diagram.
 
-![Agent model overview](../../outputs/images/06-ICL-Agents/agent-model-overview-p057.png)
+![Agent model overview](outputs/images/06-ICL-Agents/agent-model-overview-p057.png)
 
 This slide was selected because it situates modern LM agents in a broader agent taxonomy and helps separate chatbots, tool users, and autonomous agents.
 
-![Generative-agent memory and planning model](../../outputs/images/06-ICL-Agents/generative-agent-memory-planning-p066.png)
+![Generative-agent memory and planning model](outputs/images/06-ICL-Agents/generative-agent-memory-planning-p066.png)
 
 This slide was selected because the interaction between memory stream, retrieval, reflection, planning, and action is easier to understand visually.
 
-![Reflexion agent](../../outputs/images/06-ICL-Agents/reflexion-agent-p070.png)
+![Reflexion agent](outputs/images/06-ICL-Agents/reflexion-agent-p070.png)
 
 This slide was selected because it shows how actor, evaluator, self-reflection, memory, and environment feedback form an agent loop.
 

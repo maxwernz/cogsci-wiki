@@ -48,7 +48,7 @@ The lecture covers several related patterns:
 - Language models can be prompted with reward specifications, evaluate reinforcement-learning episodes, and translate evaluations into numerical payoffs.
 - Eureka-style systems use LMs to write reward-function code, then test and improve those rewards through downstream policy learning.
 
-![Reflexion agent](../../outputs/images/06-ICL-Agents/reflexion-agent-p070.png)
+![Reflexion agent](outputs/images/06-ICL-Agents/reflexion-agent-p070.png)
 
 The central idea is that language can provide richer evaluative structure than a scalar reward alone, but this creates new reliability and alignment questions because the evaluator is itself a learned model.
 

@@ -87,11 +87,11 @@ RNN/LSTM's sequential recurrence). The price: it cannot be precomputed and it is
 $O(n^2)$ in sequence length — the bottleneck later attacked by
 [[State Space Models in Understanding LLMs]].
 
-![Query, key, and value intuition](../../outputs/images/03-Transformers/query-key-value-p063.png)
+![Query, key, and value intuition](outputs/images/03-Transformers/query-key-value-p063.png)
 *The pizza analogy for Q/K/V: a token's **query** is what it is looking for, a
 **key** is what it advertises, a **value** is what it actually delivers (deck p63).*
 
-![Self-attention softmax](../../outputs/images/03-Transformers/self-attention-softmax-p070.png)
+![Self-attention softmax](outputs/images/03-Transformers/self-attention-softmax-p070.png)
 *Scaled scores pass through softmax to give attention weights (.87/.12/.01/0),
 which then weight the value vectors (deck p70).*
 

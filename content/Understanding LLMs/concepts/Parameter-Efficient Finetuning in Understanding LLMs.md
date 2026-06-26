@@ -65,7 +65,7 @@ not hand-written text — distinct from prompt *engineering* (see
 (e.g. only the top layers, or only bias terms) and freeze the rest — the simplest
 PEFT family.
 
-![LoRA adapter: frozen W₀ plus trainable low-rank B·A](../../outputs/images/05-Finetuning-RLHF-2026/lora-p024.png)
+![LoRA adapter: frozen W₀ plus trainable low-rank B·A](outputs/images/05-Finetuning-RLHF-2026/lora-p024.png)
 *LoRA freezes the pretrained weight $W_0$ and learns a low-rank bypass $\Delta W=BA$
 ($r\ll d,k$); only $A,B$ are trained (deck p24).*
 

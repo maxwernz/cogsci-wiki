@@ -37,7 +37,7 @@ The governing principle is the **"common-sense axiom" of behavioral assessment**
 - **Brier score:** mean squared error between predicted probabilities and the one-hot truth — lower is better; rewards being accurate *and* honestly confident.
 - **Expected calibration error (ECE):** the average gap between confidence and realised accuracy, read off a **reliability diagram** (accuracy vs confidence, binned). A diagonal = perfect calibration; bars below the diagonal = overconfidence.
 
-![ECE definition with reliability diagrams](../../outputs/images/09-behaveAssess-CogSciLing/ece-reliability-plots-p031.png)
+![ECE definition with reliability diagrams](outputs/images/09-behaveAssess-CogSciLing/ece-reliability-plots-p031.png)
 *ECE and reliability diagrams (slide 31, Naeini et al. 2015; Guo et al. 2017): ECE averages, over confidence levels, the gap between stated confidence $p_i$ and the actual fraction correct at that confidence. The reliability plots contrast a poorly-calibrated model (Error 44.9) with a better one (30.6).*
 
 **Bias corrections.** Raw log-prob scores are systematically biased; the lecture gives three fixes:

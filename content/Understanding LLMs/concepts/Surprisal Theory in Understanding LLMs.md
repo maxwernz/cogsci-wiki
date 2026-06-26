@@ -38,15 +38,15 @@ The logarithm matters: effort scales with *information content* (in bits/nats), 
 - **Anticipatory eye movements** (Kamide et al. 2003): hearing "The man will *ride* the …" makes listeners look at the motorbike *before* the noun is spoken, because the verb makes that object predictable — direct evidence of predictive processing.
 - **The N400 ERP** (event-related potential): a negative voltage deflection ~400 ms after a word's onset, *larger* for semantically surprising words. "John spread his bread with **socks**" elicits a much bigger N400 than "…with **jam**." Measured with EEG (scalp electrodes; good temporal, poor spatial resolution).
 
-![Anticipatory eye movements to the predictable object](../../outputs/images/09-behaveAssess-CogSciLing/anticipatory-eye-movements-p067.png)
+![Anticipatory eye movements to the predictable object](outputs/images/09-behaveAssess-CogSciLing/anticipatory-eye-movements-p067.png)
 *Anticipatory eye movements (slide 67, Kamide et al. 2003): the verb ("taste"/"ride") makes a particular object predictable, and listeners' eyes move to it before the noun is heard — predictive processing in action.*
 
-![N400 ERP for a surprising word](../../outputs/images/09-behaveAssess-CogSciLing/n400-erp-p068.png)
+![N400 ERP for a surprising word](outputs/images/09-behaveAssess-CogSciLing/n400-erp-p068.png)
 *The N400 (slide 68): "…bread with socks" (high surprisal) produces a larger negative deflection ~400 ms post-onset than "…with jam" (low surprisal) — a neural correlate of surprisal.*
 
 **The inverse-scaling twist.** If LMs are good models of human prediction, better LMs should predict reading times better. But **the opposite can happen**: Oh & Schuler (2023) found that *larger, lower-perplexity* models fit human reading times **worse**. Intuitively, a superhuman model finds rare words *less* surprising than humans do, so it underpredicts the human slowdown on exactly those words — its probabilities have diverged from human expectations. This is a caution against equating "better language model" with "better cognitive model."
 
-![Inverse scaling: larger/lower-perplexity models fit reading times worse](../../outputs/images/09-behaveAssess-CogSciLing/inverse-scaling-surprisal-p070.png)
+![Inverse scaling: larger/lower-perplexity models fit reading times worse](outputs/images/09-behaveAssess-CogSciLing/inverse-scaling-surprisal-p070.png)
 *Inverse scaling (slide 70, Oh & Schuler 2023): across GPT-2, GPT-Neo and OPT, lower perplexity (better LM) goes with worse fit to human reading data ($\Delta$LL) on both self-paced reading (Natural Stories SPR) and eye-tracking (Dundee ET) — the bigger model is the worse cognitive model.*
 
 **Layer/size matches to processing speed.** Relatedly (Kuribayashi et al. 2025), using the **logit lens** (early decoding, cf. [[Mechanistic Interpretability in Understanding LLMs]]), *small models / early-layer readouts* best explain **"fast" measures** (first-pass gaze duration, self-paced reading times), while *big models / late readouts* best explain **"slow" measures** (N400 amplitude, maze decision times) — different model depths align with different stages of human processing.

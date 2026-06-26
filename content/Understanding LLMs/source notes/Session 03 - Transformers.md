@@ -125,11 +125,11 @@ $x_i = E w_i + p_i$.
 
 ## Selected visuals
 
-![Query, key, and value intuition](../../outputs/images/03-Transformers/query-key-value-p063.png)
+![Query, key, and value intuition](outputs/images/03-Transformers/query-key-value-p063.png)
 *The pizza analogy for Q/K/V — the course's central intuition for self-attention
 (deck p63).*
 
-![Self-attention softmax](../../outputs/images/03-Transformers/self-attention-softmax-p070.png)
+![Self-attention softmax](outputs/images/03-Transformers/self-attention-softmax-p070.png)
 *Raw dot-product scores become normalized attention weights via softmax, which then
 weight the value vectors (deck p70).*
 

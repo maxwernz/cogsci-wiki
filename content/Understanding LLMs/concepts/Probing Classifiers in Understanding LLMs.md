@@ -64,13 +64,13 @@ $$\text{selectivity} = \underbrace{\text{acc}_{\text{real}}}_{\text{linguistic t
 
 A high $\text{acc}_{\text{real}}$ is only evidence about the *representation* when selectivity is also high; otherwise the high accuracy is attributable to the *probe*.
 
-![Probing architecture: frozen encoder feeds a small trained classifier](../../outputs/images/07-Probing-Attribution/probing-architecture-p066.png)
+![Probing architecture: frozen encoder feeds a small trained classifier](outputs/images/07-Probing-Attribution/probing-architecture-p066.png)
 *Probing architecture (slide 66): the encoder's weights are frozen (❄️); only the classifier on top is trained (🔥) to predict a linguistic property. This separation is what makes the result a statement about the representation.*
 
-![Control tasks assign random per-word-type labels](../../outputs/images/07-Probing-Attribution/control-tasks-p079.png)
+![Control tasks assign random per-word-type labels](outputs/images/07-Probing-Attribution/control-tasks-p079.png)
 *Control tasks (Hewitt et al. 2019, slide 79): each word type gets a fixed random label, so the only way to succeed is memorisation — the foil against which selectivity is measured.*
 
-![Probe selectivity vs probe complexity](../../outputs/images/07-Probing-Attribution/probe-selectivity-p080.png)
+![Probe selectivity vs probe complexity](outputs/images/07-Probing-Attribution/probe-selectivity-p080.png)
 *Selectivity (slide 80): as probe complexity grows, control-task accuracy rises too; the gap between real and control accuracy (selectivity) is the trustworthy signal, not raw accuracy.*
 
 ## Role in this class or project

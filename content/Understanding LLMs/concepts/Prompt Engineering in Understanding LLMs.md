@@ -48,7 +48,7 @@ Prompting strategies range from direct task instructions to structured reasoning
 - Generated-knowledge prompting: generating useful knowledge statements before answering.
 - Tree of Thought: decomposing a problem into thought states, generating continuations, evaluating states, and searching through the resulting tree.
 
-![Tree of Thought](../../outputs/images/06-ICL-Agents/tree-of-thought-p029.png)
+![Tree of Thought](outputs/images/06-ICL-Agents/tree-of-thought-p029.png)
 
 Tree of Thought is important because it turns prompting into a modular search process: thought decomposition, thought generation, state evaluation, and tree traversal.
 

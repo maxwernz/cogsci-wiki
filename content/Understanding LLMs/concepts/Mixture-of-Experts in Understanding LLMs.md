@@ -31,7 +31,7 @@ A **sparse MoE layer** contains $N$ **experts**, each a small neural network (ty
 
 In a Transformer, the MoE layer usually replaces the FFN sub-layer inside a block (a "switching FFN layer"), while attention stays dense. Different tokens in the same sequence can be routed to different experts — in the slide's example, two positions get routed with router weights like $p=0.65$ and $p=0.8$ to different FFN experts.
 
-![MoE layer: router sends each token to a few FFN experts](../../outputs/images/09-behaveAssess-CogSciLing/moe-router-experts-p005.png)
+![MoE layer: router sends each token to a few FFN experts](outputs/images/09-behaveAssess-CogSciLing/moe-router-experts-p005.png)
 *MoE layer (slide 5, HuggingFace MoE blog): the dense FFN is replaced by $N$ expert FFNs and a router that selects which expert(s) each token uses — "more parameters" without "more compute per token."*
 
 The lecture presents MoE at a recap/architecture level. The practical complications it implies (but does not detail) are **load balancing** — without care the router collapses onto a few favourite experts, wasting the rest — which is normally handled with auxiliary balancing losses, and the **communication/memory** cost of holding all experts in memory even though only a few run.

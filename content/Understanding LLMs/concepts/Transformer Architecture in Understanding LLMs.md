@@ -83,11 +83,11 @@ direct token-to-token paths ⇒ no vanishing-gradient bottleneck and easy long-r
 links. The cost is $O(n^2)$ attention in sequence length and no built-in order
 (hence positional encodings).
 
-![General transformer architecture](../../outputs/images/TransforMechInterp/transformer-architecture-p001.png)
+![General transformer architecture](outputs/images/TransforMechInterp/transformer-architecture-p001.png)
 *The full encoder/decoder transformer: embeddings + positional encodings feeding
 stacked attention/FFN blocks (deck p1).*
 
-![Transformer block anatomy](../../outputs/images/TransforMechInterp/transformer-block-p004.png)
+![Transformer block anatomy](outputs/images/TransforMechInterp/transformer-block-p004.png)
 *One block: multi-head attention → add & norm → feed-forward → add & norm (deck p4).*
 
 ## Worked example

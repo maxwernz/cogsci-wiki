@@ -38,7 +38,7 @@ No fine-tuning, no prompt — just compare the two probabilities. This makes the
 
 The difficulty ladder is the point: a model can ace *simple* agreement (local) yet fail agreement *across an object relative clause* (needs hierarchical structure). The classic result compared an n-gram baseline, a plain RNN, and an RNN with extra CCG-supertag supervision against 100 human participants (forced-choice over 76 pairs): **n-gram < simple RNN < multi-trained RNN**, and training-data performance tracked human-judgement prediction.
 
-![Marvin & Linzen targeted-evaluation results](../../outputs/images/09-behaveAssess-CogSciLing/marvin-linzen-results-p061.png)
+![Marvin & Linzen targeted-evaluation results](outputs/images/09-behaveAssess-CogSciLing/marvin-linzen-results-p061.png)
 *Targeted syntactic evaluation (slide 61, Marvin & Linzen 2018): accuracy per phenomenon for RNN / multitask / n-gram vs humans. Models do well on simple/local agreement but degrade on structurally hard cases (object relative clauses, NPIs across a clause); shaded cells mark near-chance performance.*
 
 **Grammaticality ≠ string probability.** A crucial caveat (Chomsky 1957; Wilcox et al. 2023): high probability is *not* the same as grammaticality. A *meaningful but ungrammatical* string can be more probable than a *grammatical but bizarre* one — e.g. GPT-2 assigns the ungrammatical "Snails died the old" a higher probability than the grammatical "The ancient crustaceans expired", because the latter is rare vocabulary. So raw probability conflates grammaticality with plausibility/frequency; good test suites must **separate string likelihood from grammaticality** (e.g. via minimal pairs and syntactic generalization scores).

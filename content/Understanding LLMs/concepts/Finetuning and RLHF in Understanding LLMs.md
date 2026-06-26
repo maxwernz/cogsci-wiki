@@ -88,15 +88,15 @@ default and bounded by the fixed preference dataset.
 **correction**, and **label**. Comparisons dominate because humans are reliable at
 them.
 
-![RLHF step 1 — supervised finetuning (behavioral cloning)](../../outputs/images/05-Finetuning-RLHF-2026/rlhf-step-1-p069.png)
+![RLHF step 1 — supervised finetuning (behavioral cloning)](outputs/images/05-Finetuning-RLHF-2026/rlhf-step-1-p069.png)
 *Step 1: SFT on demonstrations shifts the pretraining distribution to a
 task-specific one and yields $\pi_{\mathrm{ref}}$ (deck p69).*
 
-![RLHF step 2 — reward model from human preferences](../../outputs/images/05-Finetuning-RLHF-2026/rlhf-step-2-p070.png)
+![RLHF step 2 — reward model from human preferences](outputs/images/05-Finetuning-RLHF-2026/rlhf-step-2-p070.png)
 *Step 2: humans compare outputs; a reward model $r_\phi$ is trained to score
 preferred completions above dispreferred ones (deck p70).*
 
-![RLHF step 3 — policy optimization against the reward model](../../outputs/images/05-Finetuning-RLHF-2026/rlhf-step-3-p071.png)
+![RLHF step 3 — policy optimization against the reward model](outputs/images/05-Finetuning-RLHF-2026/rlhf-step-3-p071.png)
 *Step 3: the policy is optimized (PPO) to maximize $r_\phi$ with a KL penalty to
 $\pi_{\mathrm{ref}}$ (deck p71).*
 

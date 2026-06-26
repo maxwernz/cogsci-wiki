@@ -114,18 +114,18 @@ $$ \mathcal L_{\text{DPO}} = -\,\mathbb E\Big[\log\sigma\Big(\beta\log\tfrac{\pi
 
 ## Selected visuals
 
-![LoRA adapter](../../outputs/images/05-Finetuning-RLHF-2026/lora-p024.png)
+![LoRA adapter](outputs/images/05-Finetuning-RLHF-2026/lora-p024.png)
 *LoRA's low-rank adapter $\Delta W = BA$ added beside the frozen pretrained weight
 (deck p24).*
 
-![RLHF step 1](../../outputs/images/05-Finetuning-RLHF-2026/rlhf-step-1-p069.png)
+![RLHF step 1](outputs/images/05-Finetuning-RLHF-2026/rlhf-step-1-p069.png)
 *Step 1 — supervised finetuning / behavioral cloning, producing $\pi_{\mathrm{ref}}$
 (deck p69).*
 
-![RLHF step 2](../../outputs/images/05-Finetuning-RLHF-2026/rlhf-step-2-p070.png)
+![RLHF step 2](outputs/images/05-Finetuning-RLHF-2026/rlhf-step-2-p070.png)
 *Step 2 — turning human preference comparisons into a reward model (deck p70).*
 
-![RLHF step 3](../../outputs/images/05-Finetuning-RLHF-2026/rlhf-step-3-p071.png)
+![RLHF step 3](outputs/images/05-Finetuning-RLHF-2026/rlhf-step-3-p071.png)
 *Step 3 — policy optimization (PPO) against the learned reward with a KL penalty
 (deck p71).*
 

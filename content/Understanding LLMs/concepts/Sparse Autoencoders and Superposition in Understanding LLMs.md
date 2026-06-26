@@ -28,7 +28,7 @@ If you had one knob per concept, interpretability would be easy — "this neuron
 
 **Sparse autoencoders (SAEs)** flip the geometry. Instead of a *narrow* bottleneck, the hidden layer is **overcomplete** — *wider* than the input (e.g. 4×, or even 256×). A wider layer alone would just learn a trivial identity (copy the input), so the SAE adds a **sparsity constraint** (typically an L1 penalty on the hidden activations) forcing only a *few* hidden units ("features") to be active for any given input. The combination — overcomplete width + sparsity — is what makes the learned features **compact and meaningful**: each input is explained as a sparse sum of a few interpretable feature directions. This is dictionary learning: the SAE's decoder columns are a dictionary of feature directions, and the sparse code says which few are present.
 
-![Sparse autoencoder: overcomplete, sparse hidden features](../../outputs/images/08-Mechanistic-Interpretability/sparse-autoencoder-p040.png)
+![Sparse autoencoder: overcomplete, sparse hidden features](outputs/images/08-Mechanistic-Interpretability/sparse-autoencoder-p040.png)
 *SAE (slide 40): the hidden representation is overcomplete (wider than input/output) but L1-sparse, so each input activates only a few "features." Constraints stop it collapsing to identity; the result is compact, meaningful features.*
 
 **Scale of the problem** (Bricken et al. 2023, "Towards Monosemanticity"). For a toy model with 512 neurons and 256× expansion you get ~131k features. For GPT-3 (12,288 neurons, 256× expansion) that's ~3 million features *per SAE*, and you'd train one per layer (96 layers). The features become interpretable, but interpreting *millions* of them is itself a challenge.
@@ -42,7 +42,7 @@ If you had one knob per concept, interpretability would be easy — "this neuron
 
 So a transcoder is simultaneously a sparse, interpretable feature map *and* a **drop-in replacement** for the MLP. That dual role lets you discover **input-invariant circuits** (via greedy feature selection) rather than circuits that only hold for one input.
 
-![Transcoder vs SAE placement in the network](../../outputs/images/08-Mechanistic-Interpretability/transcoder-vs-sae-p044.png)
+![Transcoder vs SAE placement in the network](outputs/images/08-Mechanistic-Interpretability/transcoder-vs-sae-p044.png)
 *Transcoder vs. SAE (slide 44, Dunefsky et al. 2024): an SAE reconstructs a single activation; a transcoder reproduces the MLP's output and can stand in for the MLP, enabling circuit discovery through it.*
 
 **Cross-layer transcoders (CLTs)** (Ameisen et al. 2025, "Circuit Tracing"). Per-layer transcoders (PLTs) model one layer; **cross-layer transcoders** read inputs from one layer and **write to all following layers**, capturing downstream effects. You build a *replacement model* by swapping MLPs for CLTs, then construct an **attribution graph** of features across the network — a computational graph of the model's mechanism. Caveats: transcoders are *approximations* of the real model and are computationally expensive, but pretrained ones increasingly ship with open-weight model releases.

@@ -111,12 +111,12 @@ left-to-right autoregression.
 
 ## Selected visuals
 
-![General transformer architecture](../../outputs/images/TransforMechInterp/transformer-architecture-p001.png)
+![General transformer architecture](outputs/images/TransforMechInterp/transformer-architecture-p001.png)
 *The layer stack ($n_L=3$, $n_H=2$, $d_M=8$, $N=4$): the highlighted vertical chain
 of blocks computes the last token's embedding from all tokens at the previous
 layer (handout Fig. 1).*
 
-![Transformer block anatomy](../../outputs/images/TransforMechInterp/transformer-block-p004.png)
+![Transformer block anatomy](outputs/images/TransforMechInterp/transformer-block-p004.png)
 *One block: attention → LayerNorm → FFN → LayerNorm, with residual connections (gray
 arrows) around each sublayer (handout Fig. 2).*
 

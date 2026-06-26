@@ -82,7 +82,7 @@ slide's three selling points:
 3. **Highly parallel** — although the recurrence looks inherently sequential, it
    is implemented as a **parallel scan** on the GPU, so training is fast.
 
-![Selective state space model: step size Δ, input matrix B, output matrix C](../../outputs/images/10-Efficient-Alternative-Architectures/selective-ssm-p058.png)
+![Selective state space model: step size Δ, input matrix B, output matrix C](outputs/images/10-Efficient-Alternative-Architectures/selective-ssm-p058.png)
 *Mamba's selectivity: the step size $\Delta$ (input resolution), $B$ (how the input
 writes to the state, shaped by sequence length $L$ and state size $N$), and $C$
 (how the state is read out) all become input-dependent, while $A$ stays static

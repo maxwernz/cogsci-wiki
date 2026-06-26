@@ -46,7 +46,7 @@ Naive RAG has three core stages:
 2. Retrieval: embed the user prompt and retrieve the $k$ most similar chunks, often by cosine similarity.
 3. Generation: place the retrieved chunks into the prompt for the generator.
 
-![Naive RAG architecture](../../outputs/images/06-ICL-Agents/rag-naive-architecture-p046.png)
+![Naive RAG architecture](outputs/images/06-ICL-Agents/rag-naive-architecture-p046.png)
 
 The lecture also notes that practical RAG systems often need more than this naive pipeline. They may optimize chunking, attach metadata, modulate similarity by query intent, rerank retrieved chunks, shorten or summarize chunks, place the most relevant information at useful prompt positions, or use additional loops for output reranking.
 

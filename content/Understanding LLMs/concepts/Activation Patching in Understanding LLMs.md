@@ -50,10 +50,10 @@ The softmax compresses large logit changes into tiny probability changes near sa
 
 Necessity and sufficiency are different claims, and a component can be one without the other; reporting which direction you used is essential.
 
-![Activation patching setup: clean run, corrupted run, patch, observe](../../outputs/images/08-Mechanistic-Interpretability/activation-patching-setup-p029.png)
+![Activation patching setup: clean run, corrupted run, patch, observe](outputs/images/08-Mechanistic-Interpretability/activation-patching-setup-p029.png)
 *Activation patching (slide 29, Meng et al. 2022): (a) clean run → "Seattle"; (b) corrupted-subject run; (c) patch clean states into the corrupted run; (d) note where the output is fixed — those components causally carry the fact.*
 
-![Patch direction: noising (necessity) vs denoising (sufficiency)](../../outputs/images/08-Mechanistic-Interpretability/patch-direction-noising-denoising-p033.png)
+![Patch direction: noising (necessity) vs denoising (sufficiency)](outputs/images/08-Mechanistic-Interpretability/patch-direction-noising-denoising-p033.png)
 *Patch direction (slide 33, Heimersheim & Nanda 2024): corrupted→clean patching tests necessity ("noising"); clean→corrupted tests sufficiency ("denoising"). The same component can be necessary without being sufficient, or vice versa.*
 
 ## Worked example

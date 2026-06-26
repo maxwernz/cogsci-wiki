@@ -226,12 +226,12 @@ much later.
 
 ## Selected visuals
 
-![Vanishing and exploding gradients](../../outputs/images/02-PyTorch-ANNs-RNNs-LSTMs/vanishing-exploding-gradients-p071.png)
+![Vanishing and exploding gradients](outputs/images/02-PyTorch-ANNs-RNNs-LSTMs/vanishing-exploding-gradients-p071.png)
 *The unrolled BPTT path: $\partial L_4/\partial V_1$ is a chain of derivatives back
 through every step. A long product makes gradients easily vanish (far context
 forgotten) or explode (recency bias) — deck p71.*
 
-![LSTM cell](../../outputs/images/02-PyTorch-ANNs-RNNs-LSTMs/lstm-cell-p076.png)
+![LSTM cell](outputs/images/02-PyTorch-ANNs-RNNs-LSTMs/lstm-cell-p076.png)
 *The LSTM cell with forget, input, and output gates regulating a dedicated memory
 cell $c_t$ — the gates and additive cell update are easier to grasp visually than
 from prose (deck p76).*

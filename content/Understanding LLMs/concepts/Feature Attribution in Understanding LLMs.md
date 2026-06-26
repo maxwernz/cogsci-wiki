@@ -78,10 +78,10 @@ $$\mathrm{IG}(\text{input},\text{base}) = (\text{input}-\text{base}) \cdot \int_
 
 with $\alpha$ sweeping the straight path from baseline to input and $\nabla F$ the gradient at each interpolated point. It attributes the output *change* $F(\text{input}) - F(\text{base})$ across input features and repairs gradient saturation.
 
-![Integrated Gradients: integrate along a path from an informationless baseline](../../outputs/images/07-Probing-Attribution/integrated-gradients-p055.png)
+![Integrated Gradients: integrate along a path from an informationless baseline](outputs/images/07-Probing-Attribution/integrated-gradients-p055.png)
 *Integrated Gradients (slide 55): the saliency map (right) is far cleaner than a raw gradient because the attribution integrates gradients along the baseline→input path.*
 
-![Comparison of gradient-tracing saliency methods on one image](../../outputs/images/07-Probing-Attribution/gradient-tracing-methods-p061.png)
+![Comparison of gradient-tracing saliency methods on one image](outputs/images/07-Probing-Attribution/gradient-tracing-methods-p061.png)
 *Gradient-tracing methods compared (slide 61): vanilla gradients, guided backprop, Grad-CAM, Integrated Gradients, SmoothGrad and Blur-IG produce visibly different saliency maps for the same prediction — a reminder that "attribution" is method-dependent, not a single ground truth.*
 
 ## Role in this class or project
