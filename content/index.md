@@ -8,3 +8,4 @@ Use the **search** or the **explorer** sidebar. Courses:
 
 - [[Understanding LLMs/index|Understanding LLMs]]
 - [[Neuropsychology/index|Neuropsychology]]
+- [[Cognitive Modeling/index|Cognitive Modeling]]

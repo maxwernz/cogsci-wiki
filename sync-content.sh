@@ -21,7 +21,7 @@ DEST="$SITE/content"
 
 # --- What to publish -----------------------------------------------------------
 # Add more course folder names (as they appear under Classes/) to share more.
-COURSES=("Understanding LLMs" "Neuropsychology")
+COURSES=("Understanding LLMs" "Neuropsychology" "Cognitive Modeling")
 # Subfolders of each course to publish. (outputs is intentionally NOT published;
 # only the images that wiki pages actually embed get pulled in, see below.)
 # raw/ (lecture PDFs) is currently NOT published for copyright reasons — add it

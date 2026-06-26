@@ -129,6 +129,12 @@ $x^{(\ell+1)} = x^{(\ell)} + \text{sublayer}(x^{(\ell)})$ — the representation
 
 **Output:** $P(w_{t+1}\mid w_{1:t}) = \mathrm{softmax}(W_U\,r_t)$.
 
+## Animation
+
+![[rotary-positional-embedding.mp4]]
+
+*RoPE animation: query and key vectors rotate by their absolute positions, but the dot-product score simplifies to a relative-position term $n-m$.*
+
 ## Role in this class or project
 
 The transformer is **the central architecture of the course** — the thing
