@@ -14,8 +14,10 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    // GitHub Pages project site URL (https://maxwernz.github.io/cogsci-wiki/).
-    baseUrl: "maxwernz.github.io/cogsci-wiki",
+    // GitHub Pages project site URL (https://maxwernz.github.io/study-wiki/).
+    // Repo is kept as "study-wiki" so a previously shared link stays valid;
+    // the displayed site title is still "CogSci Wiki".
+    baseUrl: "maxwernz.github.io/study-wiki",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
