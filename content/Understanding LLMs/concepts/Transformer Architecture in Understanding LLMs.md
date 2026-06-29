@@ -135,6 +135,10 @@ $x^{(\ell+1)} = x^{(\ell)} + \text{sublayer}(x^{(\ell)})$ — the representation
 
 *RoPE animation: query and key vectors rotate by their absolute positions, but the dot-product score simplifies to a relative-position term $n-m$.*
 
+![[outputs/images/rope-position/manim/final.mp4]]
+
+*Alternative Manim-skill version: a shorter, three-scene RoPE explainer built with plain ManimCE and stitched from separate scene renders.*
+
 ## Role in this class or project
 
 The transformer is **the central architecture of the course** — the thing
